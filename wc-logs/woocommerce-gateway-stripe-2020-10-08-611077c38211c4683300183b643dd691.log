@@ -1,0 +1,35 @@
+2020-10-08T00:57:15+00:00 DEBUG 
+====Stripe Version: 4.5.3====
+====Start Log====
+Error: 无法验证域名 - 缺少密钥。
+====End Log====
+
+
+2020-10-08T01:01:05+00:00 DEBUG 
+====Stripe Version: 4.5.3====
+====Start Log====
+Your domain has been verified with Apple Pay!
+====End Log====
+
+
+2020-10-08T01:01:53+00:00 DEBUG 
+====Stripe Version: 4.5.3====
+====Start Log====
+Keys are not set correctly.
+====End Log====
+
+
+2020-10-08T01:02:57+00:00 DEBUG 
+====Stripe Version: 4.5.3====
+====Start Log====
+Your domain has been verified with Apple Pay!
+====End Log====
+
+
+2020-10-08T01:03:11+00:00 DEBUG 
+====Stripe Version: 4.5.3====
+====Start Log====
+Your domain has been verified with Apple Pay!
+====End Log====
+
+

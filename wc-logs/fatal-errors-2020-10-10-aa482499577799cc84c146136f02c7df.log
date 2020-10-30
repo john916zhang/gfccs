@@ -1,0 +1,9 @@
+2020-10-10T22:09:49+00:00 CRITICAL /var/www/html/wp-content/plugins/timetable/timetable.php 中第 232 行的 Uncaught TypeError: Argument 1 passed to timetable_phpmailer_init() must be an instance of PHPMailer, instance of WPMailSMTP\MailCatcherV6 given, called in /var/www/html/wp-includes/class-wp-hook.php on line 287 and defined in /var/www/html/wp-content/plugins/timetable/timetable.php:232
+Stack trace:
+#0 /var/www/html/wp-includes/class-wp-hook.php(287): timetable_phpmailer_init(Object(WPMailSMTP\MailCatcherV6))
+#1 /var/www/html/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /var/www/html/wp-includes/pluggable.php(494): do_action_ref_array('phpmailer_init', Array)
+#4 /var/www/html/wp-content/plugins/woocommerce/includes/emails/class-wc-email.php(653): wp_mail(Array, '[\xE4\xB8\xAD\xE5\x9B\xBD\xE7\xA6\x8F\xE9\x9F\xB3\xE5\xA4...', '<!DOCTYPE html>...', Array, Array)
+#5 /var/www/html/wp-content/plugins/woocommerce/includes/emails/class-wc-email-new-order.php(98): WC_Email->send('anderson916@gma...', '[\xE4\xB8\xAD\xE
+

@@ -1,0 +1,566 @@
+2020-10-27T20:24:19+00:00 INFO Webhook notification received: Event: payment_intent.succeeded. Payload: {
+  "id": "evt_1HgyiMDcYTP1D35elN16EjzK",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1603830258,
+  "data": {
+    "object": {
+      "id": "pi_1HgyiKDcYTP1D35eXl6xLtq0",
+      "object": "payment_intent",
+      "amount": 2000,
+      "amount_capturable": 0,
+      "amount_received": 2000,
+      "application": "ca_FlDZ0ADcm2FlmNs1XeIhT8uXuwbRhtvc",
+      "application_fee_amount": null,
+      "canceled_at": null,
+      "cancellation_reason": null,
+      "capture_method": "automatic",
+      "charges": {
+        "object": "list",
+        "data": [
+          {
+            "id": "ch_1HgyiKDcYTP1D35ecqAxazVv",
+            "object": "charge",
+            "amount": 2000,
+            "amount_captured": 2000,
+            "amount_refunded": 0,
+            "application": "ca_FlDZ0ADcm2FlmNs1XeIhT8uXuwbRhtvc",
+            "application_fee": null,
+            "application_fee_amount": null,
+            "balance_transaction": "txn_1HgyiLDcYTP1D35elh3RTwxo",
+            "billing_details": {
+              "address": {
+                "city": null,
+                "country": null,
+                "line1": null,
+                "line2": null,
+                "postal_code": null,
+                "state": null
+              },
+              "email": null,
+              "name": "Jie Zong",
+              "phone": null
+            },
+            "calculated_statement_descriptor": "WWW.CCLIFEFL.ORG",
+            "captured": true,
+            "created": 1603830256,
+            "currency": "usd",
+            "customer": null,
+            "description": null,
+            "destination": null,
+            "dispute": null,
+            "disputed": false,
+            "failure_code": null,
+            "failure_message": null,
+            "fraud_details": {
+            },
+            "invoice": null,
+            "livemode": true,
+            "metadata": {
+              "form_name": "大会报名",
+              "form_id": "292"
+            },
+            "on_behalf_of": null,
+            "order": null,
+            "outcome": {
+              "network_status": "approved_by_network",
+              "reason": null,
+              "risk_level": "normal",
+              "seller_message": "Payment complete.",
+              "type": "authorized"
+            },
+            "paid": true,
+            "payment_intent": "pi_1HgyiKDcYTP1D35eXl6xLtq0",
+            "payment_method": "pm_1HgyiIDcYTP1D35e5ihszRv2",
+            "payment_method_details": {
+              "card": {
+                "brand": "discover",
+                "checks": {
+                  "address_line1_check": null,
+                  "address_postal_code_check": null,
+                  "cvc_check": "pass"
+                },
+                "country": "US",
+                "exp_month": 9,
+                "exp_year": 2026,
+                "fingerprint": "R9Ld7IJmMdYzRv9r",
+                "funding": "credit",
+                "installments": null,
+                "last4": "3521",
+                "network": "discover",
+                "three_d_secure": null,
+                "wallet": null
+              },
+              "type": "card"
+            },
+            "receipt_email": "joyzong@yahoo.com",
+            "receipt_number": "1857-6664",
+            "receipt_url": "https://pay.stripe.com/receipts/acct_1HUCZvDcYTP1D35e/ch_1HgyiKDcYTP1D35ecqAxazVv/rcpt_IHXnInUOjFWKyofG8sDVq8JgY8jY6D2",
+            "refunded": false,
+            "refunds": {
+              "object": "list",
+              "data": [
+
+              ],
+              "has_more": false,
+              "total_count": 0,
+              "url": "/v1/charges/ch_1HgyiKDcYTP1D35ecqAxazVv/refunds"
+            },
+            "review": null,
+            "shipping": null,
+            "source": null,
+            "source_transfer": null,
+            "statement_descriptor": null,
+            "statement_descriptor_suffix": null,
+            "status": "succeeded",
+            "transfer_data": null,
+            "transfer_group": null
+          }
+        ],
+        "has_more": false,
+        "total_count": 1,
+        "url": "/v1/charges?payment_intent=pi_1HgyiKDcYTP1D35eXl6xLtq0"
+      },
+      "client_secret": null,
+      "confirmation_method": "automatic",
+      "created": 1603830256,
+      "currency": "usd",
+      "customer": null,
+      "description": null,
+      "invoice": null,
+      "last_payment_error": null,
+      "livemode": true,
+      "metadata": {
+        "form_name": "大会报名",
+        "form_id": "292"
+      },
+      "next_action": null,
+      "on_behalf_of": null,
+      "payment_method": "pm_1HgyiIDcYTP1D35e5ihszRv2",
+      "payment_method_options": {
+        "card": {
+          "installments": null,
+          "network": null,
+          "request_three_d_secure": "automatic"
+        }
+      },
+      "payment_method_types": [
+        "card"
+      ],
+      "receipt_email": "joyzong@yahoo.com",
+      "review": null,
+      "setup_future_usage": null,
+      "shipping": null,
+      "source": null,
+      "statement_descriptor": null,
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 2,
+  "request": {
+    "id": "req_5rD7cbUmJJJxZz",
+    "idempotency_key": null
+  },
+  "type": "payment_intent.succeeded"
+}
+2020-10-27T20:24:19+00:00 ERROR Could not complete payment for payment_intent pi_1HgyiKDcYTP1D35eXl6xLtq0. No order ID was found in your WordPress database.
+2020-10-27T20:24:19+00:00 INFO Webhook notification received: Event: charge.succeeded. Payload: {
+  "id": "evt_1HgyiMDcYTP1D35e9foLNycM",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1603830257,
+  "data": {
+    "object": {
+      "id": "ch_1HgyiKDcYTP1D35ecqAxazVv",
+      "object": "charge",
+      "amount": 2000,
+      "amount_captured": 2000,
+      "amount_refunded": 0,
+      "application": "ca_FlDZ0ADcm2FlmNs1XeIhT8uXuwbRhtvc",
+      "application_fee": null,
+      "application_fee_amount": null,
+      "balance_transaction": "txn_1HgyiLDcYTP1D35elh3RTwxo",
+      "billing_details": {
+        "address": {
+          "city": null,
+          "country": null,
+          "line1": null,
+          "line2": null,
+          "postal_code": null,
+          "state": null
+        },
+        "email": null,
+        "name": "Jie Zong",
+        "phone": null
+      },
+      "calculated_statement_descriptor": "WWW.CCLIFEFL.ORG",
+      "captured": true,
+      "created": 1603830256,
+      "currency": "usd",
+      "customer": null,
+      "description": null,
+      "destination": null,
+      "dispute": null,
+      "disputed": false,
+      "failure_code": null,
+      "failure_message": null,
+      "fraud_details": {
+      },
+      "invoice": null,
+      "livemode": true,
+      "metadata": {
+        "form_name": "大会报名",
+        "form_id": "292"
+      },
+      "on_behalf_of": null,
+      "order": null,
+      "outcome": {
+        "network_status": "approved_by_network",
+        "reason": null,
+        "risk_level": "normal",
+        "seller_message": "Payment complete.",
+        "type": "authorized"
+      },
+      "paid": true,
+      "payment_intent": "pi_1HgyiKDcYTP1D35eXl6xLtq0",
+      "payment_method": "pm_1HgyiIDcYTP1D35e5ihszRv2",
+      "payment_method_details": {
+        "card": {
+          "brand": "discover",
+          "checks": {
+            "address_line1_check": null,
+            "address_postal_code_check": null,
+            "cvc_check": "pass"
+          },
+          "country": "US",
+          "exp_month": 9,
+          "exp_year": 2026,
+          "fingerprint": "R9Ld7IJmMdYzRv9r",
+          "funding": "credit",
+          "installments": null,
+          "last4": "3521",
+          "network": "discover",
+          "three_d_secure": null,
+          "wallet": null
+        },
+        "type": "card"
+      },
+      "receipt_email": "joyzong@yahoo.com",
+      "receipt_number": "1857-6664",
+      "receipt_url": "https://pay.stripe.com/receipts/acct_1HUCZvDcYTP1D35e/ch_1HgyiKDcYTP1D35ecqAxazVv/rcpt_IHXnInUOjFWKyofG8sDVq8JgY8jY6D2",
+      "refunded": false,
+      "refunds": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/charges/ch_1HgyiKDcYTP1D35ecqAxazVv/refunds"
+      },
+      "review": null,
+      "shipping": null,
+      "source": null,
+      "source_transfer": null,
+      "statement_descriptor": null,
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 2,
+  "request": {
+    "id": "req_5rD7cbUmJJJxZz",
+    "idempotency_key": null
+  },
+  "type": "charge.succeeded"
+}
+2020-10-27T23:04:25+00:00 INFO Webhook notification received: Event: payment_intent.succeeded. Payload: {
+  "id": "evt_1Hh1DJDcYTP1D35eqBpjjL7x",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1603839865,
+  "data": {
+    "object": {
+      "id": "pi_1Hh1DHDcYTP1D35e3YqW8oHV",
+      "object": "payment_intent",
+      "amount": 1000,
+      "amount_capturable": 0,
+      "amount_received": 1000,
+      "application": "ca_FlDZ0ADcm2FlmNs1XeIhT8uXuwbRhtvc",
+      "application_fee_amount": null,
+      "canceled_at": null,
+      "cancellation_reason": null,
+      "capture_method": "automatic",
+      "charges": {
+        "object": "list",
+        "data": [
+          {
+            "id": "ch_1Hh1DHDcYTP1D35eNrE6p6id",
+            "object": "charge",
+            "amount": 1000,
+            "amount_captured": 1000,
+            "amount_refunded": 0,
+            "application": "ca_FlDZ0ADcm2FlmNs1XeIhT8uXuwbRhtvc",
+            "application_fee": null,
+            "application_fee_amount": null,
+            "balance_transaction": "txn_1Hh1DIDcYTP1D35e6lMzuoT2",
+            "billing_details": {
+              "address": {
+                "city": null,
+                "country": null,
+                "line1": null,
+                "line2": null,
+                "postal_code": null,
+                "state": null
+              },
+              "email": null,
+              "name": "ZHANG JINPENG",
+              "phone": null
+            },
+            "calculated_statement_descriptor": "WWW.CCLIFEFL.ORG",
+            "captured": true,
+            "created": 1603839863,
+            "currency": "usd",
+            "customer": null,
+            "description": null,
+            "destination": null,
+            "dispute": null,
+            "disputed": false,
+            "failure_code": null,
+            "failure_message": null,
+            "fraud_details": {
+            },
+            "invoice": null,
+            "livemode": true,
+            "metadata": {
+              "form_name": "大会报名",
+              "form_id": "292"
+            },
+            "on_behalf_of": null,
+            "order": null,
+            "outcome": {
+              "network_status": "approved_by_network",
+              "reason": null,
+              "risk_level": "normal",
+              "seller_message": "Payment complete.",
+              "type": "authorized"
+            },
+            "paid": true,
+            "payment_intent": "pi_1Hh1DHDcYTP1D35e3YqW8oHV",
+            "payment_method": "pm_1Hh1DGDcYTP1D35egOgIvkKd",
+            "payment_method_details": {
+              "card": {
+                "brand": "visa",
+                "checks": {
+                  "address_line1_check": null,
+                  "address_postal_code_check": null,
+                  "cvc_check": "pass"
+                },
+                "country": "CN",
+                "exp_month": 12,
+                "exp_year": 2024,
+                "fingerprint": "N4nm17ZvKjfBTFGU",
+                "funding": "credit",
+                "installments": null,
+                "last4": "5358",
+                "network": "visa",
+                "three_d_secure": null,
+                "wallet": null
+              },
+              "type": "card"
+            },
+            "receipt_email": "jzhang023@students.sbts.edu",
+            "receipt_number": "1003-2808",
+            "receipt_url": "https://pay.stripe.com/receipts/acct_1HUCZvDcYTP1D35e/ch_1Hh1DHDcYTP1D35eNrE6p6id/rcpt_IHaOUFQMfqMVbPteCh39nVoff3Yrd2w",
+            "refunded": false,
+            "refunds": {
+              "object": "list",
+              "data": [
+
+              ],
+              "has_more": false,
+              "total_count": 0,
+              "url": "/v1/charges/ch_1Hh1DHDcYTP1D35eNrE6p6id/refunds"
+            },
+            "review": null,
+            "shipping": null,
+            "source": null,
+            "source_transfer": null,
+            "statement_descriptor": null,
+            "statement_descriptor_suffix": null,
+            "status": "succeeded",
+            "transfer_data": null,
+            "transfer_group": null
+          }
+        ],
+        "has_more": false,
+        "total_count": 1,
+        "url": "/v1/charges?payment_intent=pi_1Hh1DHDcYTP1D35e3YqW8oHV"
+      },
+      "client_secret": null,
+      "confirmation_method": "automatic",
+      "created": 1603839863,
+      "currency": "usd",
+      "customer": null,
+      "description": null,
+      "invoice": null,
+      "last_payment_error": null,
+      "livemode": true,
+      "metadata": {
+        "form_name": "大会报名",
+        "form_id": "292"
+      },
+      "next_action": null,
+      "on_behalf_of": null,
+      "payment_method": "pm_1Hh1DGDcYTP1D35egOgIvkKd",
+      "payment_method_options": {
+        "card": {
+          "installments": null,
+          "network": null,
+          "request_three_d_secure": "automatic"
+        }
+      },
+      "payment_method_types": [
+        "card"
+      ],
+      "receipt_email": "jzhang023@students.sbts.edu",
+      "review": null,
+      "setup_future_usage": null,
+      "shipping": null,
+      "source": null,
+      "statement_descriptor": null,
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 2,
+  "request": {
+    "id": "req_NCKZuCQo6ZAkPK",
+    "idempotency_key": null
+  },
+  "type": "payment_intent.succeeded"
+}
+2020-10-27T23:04:25+00:00 ERROR Could not complete payment for payment_intent pi_1Hh1DHDcYTP1D35e3YqW8oHV. No order ID was found in your WordPress database.
+2020-10-27T23:04:26+00:00 INFO Webhook notification received: Event: charge.succeeded. Payload: {
+  "id": "evt_1Hh1DJDcYTP1D35eCi1WAp99",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1603839864,
+  "data": {
+    "object": {
+      "id": "ch_1Hh1DHDcYTP1D35eNrE6p6id",
+      "object": "charge",
+      "amount": 1000,
+      "amount_captured": 1000,
+      "amount_refunded": 0,
+      "application": "ca_FlDZ0ADcm2FlmNs1XeIhT8uXuwbRhtvc",
+      "application_fee": null,
+      "application_fee_amount": null,
+      "balance_transaction": "txn_1Hh1DIDcYTP1D35e6lMzuoT2",
+      "billing_details": {
+        "address": {
+          "city": null,
+          "country": null,
+          "line1": null,
+          "line2": null,
+          "postal_code": null,
+          "state": null
+        },
+        "email": null,
+        "name": "ZHANG JINPENG",
+        "phone": null
+      },
+      "calculated_statement_descriptor": "WWW.CCLIFEFL.ORG",
+      "captured": true,
+      "created": 1603839863,
+      "currency": "usd",
+      "customer": null,
+      "description": null,
+      "destination": null,
+      "dispute": null,
+      "disputed": false,
+      "failure_code": null,
+      "failure_message": null,
+      "fraud_details": {
+      },
+      "invoice": null,
+      "livemode": true,
+      "metadata": {
+        "form_name": "大会报名",
+        "form_id": "292"
+      },
+      "on_behalf_of": null,
+      "order": null,
+      "outcome": {
+        "network_status": "approved_by_network",
+        "reason": null,
+        "risk_level": "normal",
+        "seller_message": "Payment complete.",
+        "type": "authorized"
+      },
+      "paid": true,
+      "payment_intent": "pi_1Hh1DHDcYTP1D35e3YqW8oHV",
+      "payment_method": "pm_1Hh1DGDcYTP1D35egOgIvkKd",
+      "payment_method_details": {
+        "card": {
+          "brand": "visa",
+          "checks": {
+            "address_line1_check": null,
+            "address_postal_code_check": null,
+            "cvc_check": "pass"
+          },
+          "country": "CN",
+          "exp_month": 12,
+          "exp_year": 2024,
+          "fingerprint": "N4nm17ZvKjfBTFGU",
+          "funding": "credit",
+          "installments": null,
+          "last4": "5358",
+          "network": "visa",
+          "three_d_secure": null,
+          "wallet": null
+        },
+        "type": "card"
+      },
+      "receipt_email": "jzhang023@students.sbts.edu",
+      "receipt_number": "1003-2808",
+      "receipt_url": "https://pay.stripe.com/receipts/acct_1HUCZvDcYTP1D35e/ch_1Hh1DHDcYTP1D35eNrE6p6id/rcpt_IHaOUFQMfqMVbPteCh39nVoff3Yrd2w",
+      "refunded": false,
+      "refunds": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/charges/ch_1Hh1DHDcYTP1D35eNrE6p6id/refunds"
+      },
+      "review": null,
+      "shipping": null,
+      "source": null,
+      "source_transfer": null,
+      "statement_descriptor": null,
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 2,
+  "request": {
+    "id": "req_NCKZuCQo6ZAkPK",
+    "idempotency_key": null
+  },
+  "type": "charge.succeeded"
+}

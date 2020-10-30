@@ -1,0 +1,2066 @@
+2020-10-23T18:46:21+00:00 INFO Webhook notification received: Event: source.chargeable. Payload: {
+  "id": "evt_1HfUnJDcYTP1D35e4vP3luJK",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1603476917,
+  "data": {
+    "object": {
+      "id": "src_1HfUmxDcYTP1D35e21gPuNi5",
+      "object": "source",
+      "amount": 90,
+      "client_secret": "src_client_secret_1r5h5Os90P523kw2vZIbQla6",
+      "created": 1603476895,
+      "currency": "usd",
+      "flow": "none",
+      "livemode": true,
+      "metadata": {
+        "order_id": "488",
+        "created": "1603476895"
+      },
+      "owner": {
+        "address": null,
+        "email": "cclifegfcc@gmail.com",
+        "name": "WeChat22 1111",
+        "phone": null,
+        "verified_address": null,
+        "verified_email": null,
+        "verified_name": null,
+        "verified_phone": null
+      },
+      "statement_descriptor": "Order 488",
+      "status": "chargeable",
+      "type": "wechat",
+      "usage": "single_use",
+      "wechat": {
+        "prepay_id": "wx24021456320136015bc7c96829340b0000",
+        "qr_code_url": "weixin://wxpay/bizpayurl?pr=kwsCNC500"
+      }
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 1,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "source.chargeable"
+}
+2020-10-23T18:46:23+00:00 INFO Stripe charge: Stripe\Charge Object
+(
+    [id] => py_1HfVHODcYTP1D35eGn0tbwZB
+    [object] => charge
+    [amount] => 90
+    [amount_captured] => 90
+    [amount_refunded] => 0
+    [application] => ca_Gp4vLOJiqHJLZGxakHW7JdbBlcgWK8Up
+    [application_fee] => 
+    [application_fee_amount] => 
+    [balance_transaction] => txn_1HfVHPDcYTP1D35e9goXrXkS
+    [billing_details] => Stripe\StripeObject Object
+        (
+            [address] => Stripe\StripeObject Object
+                (
+                    [city] => 
+                    [country] => 
+                    [line1] => 
+                    [line2] => 
+                    [postal_code] => 
+                    [state] => 
+                )
+
+            [email] => cclifegfcc@gmail.com
+            [name] => WeChat22 1111
+            [phone] => 
+        )
+
+    [calculated_statement_descriptor] => 
+    [captured] => 1
+    [created] => 1603478782
+    [currency] => usd
+    [customer] => 
+    [description] => Order 488 from 中国福音大会
+    [destination] => 
+    [dispute] => 
+    [disputed] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => Array
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 1
+    [metadata] => Stripe\StripeObject Object
+        (
+            [gateway_id] => stripe_wechat
+            [order_id] => 488
+            [user_id] => 17
+            [customer_id] => cus_IFkWaOh17tcQ9M
+            [ip_address] => 96.29.146.174
+            [user_agent] => Stripe/1.0 (+https://stripe.com/docs/webhooks)
+            [partner] => PaymentPlugins
+            [created] => 1603478781
+            [product_287] => 奉献 Donation x 1
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => Stripe\StripeObject Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => not_assessed
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [payment_intent] => 
+    [payment_method] => src_1HfUmxDcYTP1D35e21gPuNi5
+    [payment_method_details] => Stripe\StripeObject Object
+        (
+            [type] => wechat
+            [wechat] => Array
+                (
+                )
+
+        )
+
+    [receipt_email] => 
+    [receipt_number] => 
+    [receipt_url] => https://pay.stripe.com/receipts/acct_1HUCZvDcYTP1D35e/py_1HfVHODcYTP1D35eGn0tbwZB/rcpt_IG1K8OIWeyanhHyjRovozxX3x4sPAeN
+    [refunded] => 
+    [refunds] => Stripe\Collection Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/py_1HfVHODcYTP1D35eGn0tbwZB/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => Stripe\Source Object
+        (
+            [id] => src_1HfUmxDcYTP1D35e21gPuNi5
+            [object] => source
+            [amount] => 90
+            [client_secret] => src_client_secret_1r5h5Os90P523kw2vZIbQla6
+            [created] => 1603478783
+            [currency] => usd
+            [flow] => none
+            [livemode] => 1
+            [metadata] => Stripe\StripeObject Object
+                (
+                    [order_id] => 488
+                    [created] => 1603476895
+                )
+
+            [owner] => Stripe\StripeObject Object
+                (
+                    [address] => 
+                    [email] => cclifegfcc@gmail.com
+                    [name] => WeChat22 1111
+                    [phone] => 
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [statement_descriptor] => Order 488
+            [status] => consumed
+            [type] => wechat
+            [usage] => single_use
+            [wechat] => Stripe\StripeObject Object
+                (
+                    [prepay_id] => wx24021456320136015bc7c96829340b0000
+                    [qr_code_url] => weixin://wxpay/bizpayurl?pr=kwsCNC500
+                )
+
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [statement_descriptor_suffix] => 
+    [status] => succeeded
+    [transfer_data] => 
+    [transfer_group] => 
+)
+
+2020-10-23T18:46:25+00:00 INFO Webhook notification received: Event: charge.succeeded. Payload: {
+  "id": "evt_1HfVHPDcYTP1D35er4MZXG9Y",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1603478783,
+  "data": {
+    "object": {
+      "id": "py_1HfVHODcYTP1D35eGn0tbwZB",
+      "object": "charge",
+      "amount": 90,
+      "amount_captured": 90,
+      "amount_refunded": 0,
+      "application": "ca_Gp4vLOJiqHJLZGxakHW7JdbBlcgWK8Up",
+      "application_fee": null,
+      "application_fee_amount": null,
+      "balance_transaction": "txn_1HfVHPDcYTP1D35e9goXrXkS",
+      "billing_details": {
+        "address": {
+          "city": null,
+          "country": null,
+          "line1": null,
+          "line2": null,
+          "postal_code": null,
+          "state": null
+        },
+        "email": "cclifegfcc@gmail.com",
+        "name": "WeChat22 1111",
+        "phone": null
+      },
+      "calculated_statement_descriptor": null,
+      "captured": true,
+      "created": 1603478782,
+      "currency": "usd",
+      "customer": null,
+      "description": "Order 488 from 中国福音大会",
+      "destination": null,
+      "dispute": null,
+      "disputed": false,
+      "failure_code": null,
+      "failure_message": null,
+      "fraud_details": {
+      },
+      "invoice": null,
+      "livemode": true,
+      "metadata": {
+        "gateway_id": "stripe_wechat",
+        "order_id": "488",
+        "user_id": "17",
+        "customer_id": "cus_IFkWaOh17tcQ9M",
+        "ip_address": "96.29.146.174",
+        "user_agent": "Stripe/1.0 (+https://stripe.com/docs/webhooks)",
+        "partner": "PaymentPlugins",
+        "created": "1603478781",
+        "product_287": "奉献 Donation x 1"
+      },
+      "on_behalf_of": null,
+      "order": null,
+      "outcome": {
+        "network_status": "approved_by_network",
+        "reason": null,
+        "risk_level": "not_assessed",
+        "seller_message": "Payment complete.",
+        "type": "authorized"
+      },
+      "paid": true,
+      "payment_intent": null,
+      "payment_method": "src_1HfUmxDcYTP1D35e21gPuNi5",
+      "payment_method_details": {
+        "type": "wechat",
+        "wechat": {
+        }
+      },
+      "receipt_email": null,
+      "receipt_number": null,
+      "receipt_url": "https://pay.stripe.com/receipts/acct_1HUCZvDcYTP1D35e/py_1HfVHODcYTP1D35eGn0tbwZB/rcpt_IG1K8OIWeyanhHyjRovozxX3x4sPAeN",
+      "refunded": false,
+      "refunds": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/charges/py_1HfVHODcYTP1D35eGn0tbwZB/refunds"
+      },
+      "review": null,
+      "shipping": null,
+      "source": {
+        "id": "src_1HfUmxDcYTP1D35e21gPuNi5",
+        "object": "source",
+        "amount": 90,
+        "client_secret": "src_client_secret_1r5h5Os90P523kw2vZIbQla6",
+        "created": 1603478783,
+        "currency": "usd",
+        "flow": "none",
+        "livemode": true,
+        "metadata": {
+          "order_id": "488",
+          "created": "1603476895"
+        },
+        "owner": {
+          "address": null,
+          "email": "cclifegfcc@gmail.com",
+          "name": "WeChat22 1111",
+          "phone": null,
+          "verified_address": null,
+          "verified_email": null,
+          "verified_name": null,
+          "verified_phone": null
+        },
+        "statement_descriptor": "Order 488",
+        "status": "consumed",
+        "type": "wechat",
+        "usage": "single_use",
+        "wechat": {
+          "prepay_id": "wx24021456320136015bc7c96829340b0000",
+          "qr_code_url": "weixin://wxpay/bizpayurl?pr=kwsCNC500"
+        }
+      },
+      "source_transfer": null,
+      "statement_descriptor": null,
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 2,
+  "request": {
+    "id": "req_yl0BwxEDah5l36",
+    "idempotency_key": null
+  },
+  "type": "charge.succeeded"
+}
+2020-10-23T18:52:58+00:00 INFO Webhook notification received: Event: source.chargeable. Payload: {
+  "id": "evt_1HfVNlDcYTP1D35eMoe63EVe",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1603479177,
+  "data": {
+    "object": {
+      "id": "src_1HfVNMDcYTP1D35e8t0FPlld",
+      "object": "source",
+      "amount": 70,
+      "client_secret": "src_client_secret_va76V3ndt5w8eC6kzQrpPG01",
+      "created": 1603479152,
+      "currency": "usd",
+      "flow": "none",
+      "livemode": true,
+      "metadata": {
+        "order_id": "489",
+        "created": "1603479152"
+      },
+      "owner": {
+        "address": null,
+        "email": "cclifegfcc@gmail.com",
+        "name": "WeChat22 1111",
+        "phone": null,
+        "verified_address": null,
+        "verified_email": null,
+        "verified_name": null,
+        "verified_phone": null
+      },
+      "statement_descriptor": "Order 489",
+      "status": "chargeable",
+      "type": "wechat",
+      "usage": "single_use",
+      "wechat": {
+        "prepay_id": "wx2402523377654548763885eb57e3940000",
+        "qr_code_url": "weixin://wxpay/bizpayurl?pr=x5AGf9I00"
+      }
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 2,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "source.chargeable"
+}
+2020-10-23T18:52:59+00:00 INFO Stripe charge: WP_Error Object
+(
+    [errors] => Array
+        (
+            [charges-error] => Array
+                (
+                    [0] => Invalid source object: must be a dictionary or a non-empty string. See API docs at https://stripe.com/docs'
+                )
+
+        )
+
+    [error_data] => Array
+        (
+            [charges-error] => Array
+                (
+                    [message] => Invalid source object: must be a dictionary or a non-empty string. See API docs at https://stripe.com/docs'
+                    [param] => source
+                    [type] => invalid_request_error
+                )
+
+        )
+
+)
+
+2020-10-23T18:53:00+00:00 INFO Stripe charge: Stripe\Charge Object
+(
+    [id] => py_1HfVNmDcYTP1D35eRI0oJeBz
+    [object] => charge
+    [amount] => 70
+    [amount_captured] => 70
+    [amount_refunded] => 0
+    [application] => ca_Gp4vLOJiqHJLZGxakHW7JdbBlcgWK8Up
+    [application_fee] => 
+    [application_fee_amount] => 
+    [balance_transaction] => txn_1HfVNoDcYTP1D35eD0bN0Fgq
+    [billing_details] => Stripe\StripeObject Object
+        (
+            [address] => Stripe\StripeObject Object
+                (
+                    [city] => 
+                    [country] => 
+                    [line1] => 
+                    [line2] => 
+                    [postal_code] => 
+                    [state] => 
+                )
+
+            [email] => cclifegfcc@gmail.com
+            [name] => WeChat22 1111
+            [phone] => 
+        )
+
+    [calculated_statement_descriptor] => 
+    [captured] => 1
+    [created] => 1603479178
+    [currency] => usd
+    [customer] => 
+    [description] => Order 489 from 中国福音大会
+    [destination] => 
+    [dispute] => 
+    [disputed] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => Array
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 1
+    [metadata] => Stripe\StripeObject Object
+        (
+            [gateway_id] => stripe_wechat
+            [order_id] => 489
+            [user_id] => 17
+            [customer_id] => cus_IFkWaOh17tcQ9M
+            [ip_address] => 96.29.146.174
+            [user_agent] => Stripe/1.0 (+https://stripe.com/docs/webhooks)
+            [partner] => PaymentPlugins
+            [created] => 1603479178
+            [product_287] => 奉献 Donation x 1
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => Stripe\StripeObject Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => not_assessed
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [payment_intent] => 
+    [payment_method] => src_1HfVNMDcYTP1D35e8t0FPlld
+    [payment_method_details] => Stripe\StripeObject Object
+        (
+            [type] => wechat
+            [wechat] => Array
+                (
+                )
+
+        )
+
+    [receipt_email] => 
+    [receipt_number] => 
+    [receipt_url] => https://pay.stripe.com/receipts/acct_1HUCZvDcYTP1D35e/py_1HfVNmDcYTP1D35eRI0oJeBz/rcpt_IG1QXdPbWTQgrmAZtfzLxgD5wlBQvng
+    [refunded] => 
+    [refunds] => Stripe\Collection Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/py_1HfVNmDcYTP1D35eRI0oJeBz/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => Stripe\Source Object
+        (
+            [id] => src_1HfVNMDcYTP1D35e8t0FPlld
+            [object] => source
+            [amount] => 70
+            [client_secret] => src_client_secret_va76V3ndt5w8eC6kzQrpPG01
+            [created] => 1603479180
+            [currency] => usd
+            [flow] => none
+            [livemode] => 1
+            [metadata] => Stripe\StripeObject Object
+                (
+                    [order_id] => 489
+                    [created] => 1603479152
+                )
+
+            [owner] => Stripe\StripeObject Object
+                (
+                    [address] => 
+                    [email] => cclifegfcc@gmail.com
+                    [name] => WeChat22 1111
+                    [phone] => 
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [statement_descriptor] => Order 489
+            [status] => consumed
+            [type] => wechat
+            [usage] => single_use
+            [wechat] => Stripe\StripeObject Object
+                (
+                    [prepay_id] => wx2402523377654548763885eb57e3940000
+                    [qr_code_url] => weixin://wxpay/bizpayurl?pr=x5AGf9I00
+                )
+
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [statement_descriptor_suffix] => 
+    [status] => succeeded
+    [transfer_data] => 
+    [transfer_group] => 
+)
+
+2020-10-23T18:53:01+00:00 INFO Webhook notification received: Event: charge.succeeded. Payload: {
+  "id": "evt_1HfVNoDcYTP1D35eHriuJTk3",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1603479180,
+  "data": {
+    "object": {
+      "id": "py_1HfVNmDcYTP1D35eRI0oJeBz",
+      "object": "charge",
+      "amount": 70,
+      "amount_captured": 70,
+      "amount_refunded": 0,
+      "application": "ca_Gp4vLOJiqHJLZGxakHW7JdbBlcgWK8Up",
+      "application_fee": null,
+      "application_fee_amount": null,
+      "balance_transaction": "txn_1HfVNoDcYTP1D35eD0bN0Fgq",
+      "billing_details": {
+        "address": {
+          "city": null,
+          "country": null,
+          "line1": null,
+          "line2": null,
+          "postal_code": null,
+          "state": null
+        },
+        "email": "cclifegfcc@gmail.com",
+        "name": "WeChat22 1111",
+        "phone": null
+      },
+      "calculated_statement_descriptor": null,
+      "captured": true,
+      "created": 1603479178,
+      "currency": "usd",
+      "customer": null,
+      "description": "Order 489 from 中国福音大会",
+      "destination": null,
+      "dispute": null,
+      "disputed": false,
+      "failure_code": null,
+      "failure_message": null,
+      "fraud_details": {
+      },
+      "invoice": null,
+      "livemode": true,
+      "metadata": {
+        "gateway_id": "stripe_wechat",
+        "order_id": "489",
+        "user_id": "17",
+        "customer_id": "cus_IFkWaOh17tcQ9M",
+        "ip_address": "96.29.146.174",
+        "user_agent": "Stripe/1.0 (+https://stripe.com/docs/webhooks)",
+        "partner": "PaymentPlugins",
+        "created": "1603479178",
+        "product_287": "奉献 Donation x 1"
+      },
+      "on_behalf_of": null,
+      "order": null,
+      "outcome": {
+        "network_status": "approved_by_network",
+        "reason": null,
+        "risk_level": "not_assessed",
+        "seller_message": "Payment complete.",
+        "type": "authorized"
+      },
+      "paid": true,
+      "payment_intent": null,
+      "payment_method": "src_1HfVNMDcYTP1D35e8t0FPlld",
+      "payment_method_details": {
+        "type": "wechat",
+        "wechat": {
+        }
+      },
+      "receipt_email": null,
+      "receipt_number": null,
+      "receipt_url": "https://pay.stripe.com/receipts/acct_1HUCZvDcYTP1D35e/py_1HfVNmDcYTP1D35eRI0oJeBz/rcpt_IG1QXdPbWTQgrmAZtfzLxgD5wlBQvng",
+      "refunded": false,
+      "refunds": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/charges/py_1HfVNmDcYTP1D35eRI0oJeBz/refunds"
+      },
+      "review": null,
+      "shipping": null,
+      "source": {
+        "id": "src_1HfVNMDcYTP1D35e8t0FPlld",
+        "object": "source",
+        "amount": 70,
+        "client_secret": "src_client_secret_va76V3ndt5w8eC6kzQrpPG01",
+        "created": 1603479180,
+        "currency": "usd",
+        "flow": "none",
+        "livemode": true,
+        "metadata": {
+          "order_id": "489",
+          "created": "1603479152"
+        },
+        "owner": {
+          "address": null,
+          "email": "cclifegfcc@gmail.com",
+          "name": "WeChat22 1111",
+          "phone": null,
+          "verified_address": null,
+          "verified_email": null,
+          "verified_name": null,
+          "verified_phone": null
+        },
+        "statement_descriptor": "Order 489",
+        "status": "consumed",
+        "type": "wechat",
+        "usage": "single_use",
+        "wechat": {
+          "prepay_id": "wx2402523377654548763885eb57e3940000",
+          "qr_code_url": "weixin://wxpay/bizpayurl?pr=x5AGf9I00"
+        }
+      },
+      "source_transfer": null,
+      "statement_descriptor": null,
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 2,
+  "request": {
+    "id": "req_1IU30dFIidGlp9",
+    "idempotency_key": null
+  },
+  "type": "charge.succeeded"
+}
+2020-10-23T19:16:53+00:00 INFO Webhook notification received: Event: source.chargeable. Payload: {
+  "id": "evt_1HfVkuDcYTP1D35ePd6wfUPS",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1603480612,
+  "data": {
+    "object": {
+      "id": "src_1HfVkZDcYTP1D35enDK9Q5Xg",
+      "object": "source",
+      "amount": 60,
+      "client_secret": "src_client_secret_F2lwLAyWNZEgYrq4XsRGpmXf",
+      "created": 1603480591,
+      "currency": "usd",
+      "flow": "none",
+      "livemode": true,
+      "metadata": {
+        "order_id": "493",
+        "created": "1603480591"
+      },
+      "owner": {
+        "address": null,
+        "email": "cclifegfcc@gmail.com",
+        "name": "WeChat22 1111",
+        "phone": null,
+        "verified_address": null,
+        "verified_email": null,
+        "verified_name": null,
+        "verified_phone": null
+      },
+      "statement_descriptor": "Order 493",
+      "status": "chargeable",
+      "type": "wechat",
+      "usage": "single_use",
+      "wechat": {
+        "prepay_id": "wx24031631588766f400c297097a77880000",
+        "qr_code_url": "weixin://wxpay/bizpayurl?pr=PGST03C00"
+      }
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 2,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "source.chargeable"
+}
+2020-10-23T19:16:54+00:00 INFO Stripe charge: Stripe\Charge Object
+(
+    [id] => py_1HfVkvDcYTP1D35ez2YZkMuY
+    [object] => charge
+    [amount] => 60
+    [amount_captured] => 60
+    [amount_refunded] => 0
+    [application] => ca_Gp4vLOJiqHJLZGxakHW7JdbBlcgWK8Up
+    [application_fee] => 
+    [application_fee_amount] => 
+    [balance_transaction] => txn_1HfVkwDcYTP1D35ebQCXmcrP
+    [billing_details] => Stripe\StripeObject Object
+        (
+            [address] => Stripe\StripeObject Object
+                (
+                    [city] => 
+                    [country] => 
+                    [line1] => 
+                    [line2] => 
+                    [postal_code] => 
+                    [state] => 
+                )
+
+            [email] => cclifegfcc@gmail.com
+            [name] => WeChat22 1111
+            [phone] => 
+        )
+
+    [calculated_statement_descriptor] => 
+    [captured] => 1
+    [created] => 1603480613
+    [currency] => usd
+    [customer] => 
+    [description] => Order 493 from 中国福音大会
+    [destination] => 
+    [dispute] => 
+    [disputed] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => Array
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 1
+    [metadata] => Stripe\StripeObject Object
+        (
+            [gateway_id] => stripe_wechat
+            [order_id] => 493
+            [user_id] => 17
+            [customer_id] => cus_IFkWaOh17tcQ9M
+            [ip_address] => 96.29.146.174
+            [user_agent] => Stripe/1.0 (+https://stripe.com/docs/webhooks)
+            [partner] => PaymentPlugins
+            [created] => 1603480613
+            [product_287] => 奉献 Donation x 1
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => Stripe\StripeObject Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => not_assessed
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [payment_intent] => 
+    [payment_method] => src_1HfVkZDcYTP1D35enDK9Q5Xg
+    [payment_method_details] => Stripe\StripeObject Object
+        (
+            [type] => wechat
+            [wechat] => Array
+                (
+                )
+
+        )
+
+    [receipt_email] => 
+    [receipt_number] => 
+    [receipt_url] => https://pay.stripe.com/receipts/acct_1HUCZvDcYTP1D35e/py_1HfVkvDcYTP1D35ez2YZkMuY/rcpt_IG1otc5Wji3bnli8KcgfJRq3yXCqM3l
+    [refunded] => 
+    [refunds] => Stripe\Collection Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/py_1HfVkvDcYTP1D35ez2YZkMuY/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => Stripe\Source Object
+        (
+            [id] => src_1HfVkZDcYTP1D35enDK9Q5Xg
+            [object] => source
+            [amount] => 60
+            [client_secret] => src_client_secret_F2lwLAyWNZEgYrq4XsRGpmXf
+            [created] => 1603480614
+            [currency] => usd
+            [flow] => none
+            [livemode] => 1
+            [metadata] => Stripe\StripeObject Object
+                (
+                    [order_id] => 493
+                    [created] => 1603480591
+                )
+
+            [owner] => Stripe\StripeObject Object
+                (
+                    [address] => 
+                    [email] => cclifegfcc@gmail.com
+                    [name] => WeChat22 1111
+                    [phone] => 
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [statement_descriptor] => Order 493
+            [status] => consumed
+            [type] => wechat
+            [usage] => single_use
+            [wechat] => Stripe\StripeObject Object
+                (
+                    [prepay_id] => wx24031631588766f400c297097a77880000
+                    [qr_code_url] => weixin://wxpay/bizpayurl?pr=PGST03C00
+                )
+
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [statement_descriptor_suffix] => 
+    [status] => succeeded
+    [transfer_data] => 
+    [transfer_group] => 
+)
+
+2020-10-23T19:16:55+00:00 INFO Webhook notification received: Event: charge.succeeded. Payload: {
+  "id": "evt_1HfVkwDcYTP1D35elP44ljWY",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1603480614,
+  "data": {
+    "object": {
+      "id": "py_1HfVkvDcYTP1D35ez2YZkMuY",
+      "object": "charge",
+      "amount": 60,
+      "amount_captured": 60,
+      "amount_refunded": 0,
+      "application": "ca_Gp4vLOJiqHJLZGxakHW7JdbBlcgWK8Up",
+      "application_fee": null,
+      "application_fee_amount": null,
+      "balance_transaction": "txn_1HfVkwDcYTP1D35ebQCXmcrP",
+      "billing_details": {
+        "address": {
+          "city": null,
+          "country": null,
+          "line1": null,
+          "line2": null,
+          "postal_code": null,
+          "state": null
+        },
+        "email": "cclifegfcc@gmail.com",
+        "name": "WeChat22 1111",
+        "phone": null
+      },
+      "calculated_statement_descriptor": null,
+      "captured": true,
+      "created": 1603480613,
+      "currency": "usd",
+      "customer": null,
+      "description": "Order 493 from 中国福音大会",
+      "destination": null,
+      "dispute": null,
+      "disputed": false,
+      "failure_code": null,
+      "failure_message": null,
+      "fraud_details": {
+      },
+      "invoice": null,
+      "livemode": true,
+      "metadata": {
+        "gateway_id": "stripe_wechat",
+        "order_id": "493",
+        "user_id": "17",
+        "customer_id": "cus_IFkWaOh17tcQ9M",
+        "ip_address": "96.29.146.174",
+        "user_agent": "Stripe/1.0 (+https://stripe.com/docs/webhooks)",
+        "partner": "PaymentPlugins",
+        "created": "1603480613",
+        "product_287": "奉献 Donation x 1"
+      },
+      "on_behalf_of": null,
+      "order": null,
+      "outcome": {
+        "network_status": "approved_by_network",
+        "reason": null,
+        "risk_level": "not_assessed",
+        "seller_message": "Payment complete.",
+        "type": "authorized"
+      },
+      "paid": true,
+      "payment_intent": null,
+      "payment_method": "src_1HfVkZDcYTP1D35enDK9Q5Xg",
+      "payment_method_details": {
+        "type": "wechat",
+        "wechat": {
+        }
+      },
+      "receipt_email": null,
+      "receipt_number": null,
+      "receipt_url": "https://pay.stripe.com/receipts/acct_1HUCZvDcYTP1D35e/py_1HfVkvDcYTP1D35ez2YZkMuY/rcpt_IG1otc5Wji3bnli8KcgfJRq3yXCqM3l",
+      "refunded": false,
+      "refunds": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/charges/py_1HfVkvDcYTP1D35ez2YZkMuY/refunds"
+      },
+      "review": null,
+      "shipping": null,
+      "source": {
+        "id": "src_1HfVkZDcYTP1D35enDK9Q5Xg",
+        "object": "source",
+        "amount": 60,
+        "client_secret": "src_client_secret_F2lwLAyWNZEgYrq4XsRGpmXf",
+        "created": 1603480614,
+        "currency": "usd",
+        "flow": "none",
+        "livemode": true,
+        "metadata": {
+          "order_id": "493",
+          "created": "1603480591"
+        },
+        "owner": {
+          "address": null,
+          "email": "cclifegfcc@gmail.com",
+          "name": "WeChat22 1111",
+          "phone": null,
+          "verified_address": null,
+          "verified_email": null,
+          "verified_name": null,
+          "verified_phone": null
+        },
+        "statement_descriptor": "Order 493",
+        "status": "consumed",
+        "type": "wechat",
+        "usage": "single_use",
+        "wechat": {
+          "prepay_id": "wx24031631588766f400c297097a77880000",
+          "qr_code_url": "weixin://wxpay/bizpayurl?pr=PGST03C00"
+        }
+      },
+      "source_transfer": null,
+      "statement_descriptor": null,
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 2,
+  "request": {
+    "id": "req_dCkhPOooJLGXVH",
+    "idempotency_key": null
+  },
+  "type": "charge.succeeded"
+}
+2020-10-23T19:22:34+00:00 INFO Webhook notification received: Event: account.application.authorized. Payload: {
+  "id": "evt_1HfUuwDcYTP1D35e1WTo0mzi",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1603477390,
+  "data": {
+    "object": {
+      "id": "ca_Gp4vLOJiqHJLZGxakHW7JdbBlcgWK8Up",
+      "object": "application",
+      "name": "Stripe For WooCommerce"
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 1,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "account.application.authorized"
+}
+2020-10-23T20:05:22+00:00 INFO Webhook notification received: Event: source.chargeable. Payload: {
+  "id": "evt_1HfVYgDcYTP1D35eaWaVZgU7",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1603479854,
+  "data": {
+    "object": {
+      "id": "src_1HfVY8DcYTP1D35e2sn9qSYJ",
+      "object": "source",
+      "amount": 70,
+      "client_secret": "src_client_secret_T8EO9S5CDqeQXNauLjlbXttS",
+      "created": 1603479820,
+      "currency": "usd",
+      "flow": "none",
+      "livemode": true,
+      "metadata": {
+        "order_id": "491",
+        "created": "1603479820"
+      },
+      "owner": {
+        "address": null,
+        "email": "cclifegfcc@gmail.com",
+        "name": "WeChat22 1111",
+        "phone": null,
+        "verified_address": null,
+        "verified_email": null,
+        "verified_name": null,
+        "verified_phone": null
+      },
+      "statement_descriptor": "Order 491",
+      "status": "chargeable",
+      "type": "wechat",
+      "usage": "single_use",
+      "wechat": {
+        "prepay_id": "wx240303418184220ac868e132774e9c0000",
+        "qr_code_url": "weixin://wxpay/bizpayurl?pr=0rTyG0200"
+      }
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 1,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "source.chargeable"
+}
+2020-10-23T20:05:24+00:00 INFO Stripe charge: Stripe\Charge Object
+(
+    [id] => py_1HfWVrDcYTP1D35eNVq2AflO
+    [object] => charge
+    [amount] => 70
+    [amount_captured] => 70
+    [amount_refunded] => 0
+    [application] => ca_Gp4vLOJiqHJLZGxakHW7JdbBlcgWK8Up
+    [application_fee] => 
+    [application_fee_amount] => 
+    [balance_transaction] => txn_1HfWVsDcYTP1D35edJPttLOL
+    [billing_details] => Stripe\StripeObject Object
+        (
+            [address] => Stripe\StripeObject Object
+                (
+                    [city] => 
+                    [country] => 
+                    [line1] => 
+                    [line2] => 
+                    [postal_code] => 
+                    [state] => 
+                )
+
+            [email] => cclifegfcc@gmail.com
+            [name] => WeChat22 1111
+            [phone] => 
+        )
+
+    [calculated_statement_descriptor] => 
+    [captured] => 1
+    [created] => 1603483523
+    [currency] => usd
+    [customer] => 
+    [description] => Order 491 from 中国福音大会
+    [destination] => 
+    [dispute] => 
+    [disputed] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => Array
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 1
+    [metadata] => Stripe\StripeObject Object
+        (
+            [gateway_id] => stripe_wechat
+            [order_id] => 491
+            [user_id] => 17
+            [customer_id] => cus_IFkWaOh17tcQ9M
+            [ip_address] => 96.29.146.174
+            [user_agent] => Stripe/1.0 (+https://stripe.com/docs/webhooks)
+            [partner] => PaymentPlugins
+            [created] => 1603483522
+            [product_287] => 奉献 Donation x 1
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => Stripe\StripeObject Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => not_assessed
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [payment_intent] => 
+    [payment_method] => src_1HfVY8DcYTP1D35e2sn9qSYJ
+    [payment_method_details] => Stripe\StripeObject Object
+        (
+            [type] => wechat
+            [wechat] => Array
+                (
+                )
+
+        )
+
+    [receipt_email] => 
+    [receipt_number] => 
+    [receipt_url] => https://pay.stripe.com/receipts/acct_1HUCZvDcYTP1D35e/py_1HfWVrDcYTP1D35eNVq2AflO/rcpt_IG2b9OXM8mQWI0cTRv56NiIU6dE2lJB
+    [refunded] => 
+    [refunds] => Stripe\Collection Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/py_1HfWVrDcYTP1D35eNVq2AflO/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => Stripe\Source Object
+        (
+            [id] => src_1HfVY8DcYTP1D35e2sn9qSYJ
+            [object] => source
+            [amount] => 70
+            [client_secret] => src_client_secret_T8EO9S5CDqeQXNauLjlbXttS
+            [created] => 1603483524
+            [currency] => usd
+            [flow] => none
+            [livemode] => 1
+            [metadata] => Stripe\StripeObject Object
+                (
+                    [order_id] => 491
+                    [created] => 1603479820
+                )
+
+            [owner] => Stripe\StripeObject Object
+                (
+                    [address] => 
+                    [email] => cclifegfcc@gmail.com
+                    [name] => WeChat22 1111
+                    [phone] => 
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [statement_descriptor] => Order 491
+            [status] => consumed
+            [type] => wechat
+            [usage] => single_use
+            [wechat] => Stripe\StripeObject Object
+                (
+                    [prepay_id] => wx240303418184220ac868e132774e9c0000
+                    [qr_code_url] => weixin://wxpay/bizpayurl?pr=0rTyG0200
+                )
+
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [statement_descriptor_suffix] => 
+    [status] => succeeded
+    [transfer_data] => 
+    [transfer_group] => 
+)
+
+2020-10-23T20:05:25+00:00 INFO Webhook notification received: Event: charge.succeeded. Payload: {
+  "id": "evt_1HfWVsDcYTP1D35emARvZKao",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1603483524,
+  "data": {
+    "object": {
+      "id": "py_1HfWVrDcYTP1D35eNVq2AflO",
+      "object": "charge",
+      "amount": 70,
+      "amount_captured": 70,
+      "amount_refunded": 0,
+      "application": "ca_Gp4vLOJiqHJLZGxakHW7JdbBlcgWK8Up",
+      "application_fee": null,
+      "application_fee_amount": null,
+      "balance_transaction": "txn_1HfWVsDcYTP1D35edJPttLOL",
+      "billing_details": {
+        "address": {
+          "city": null,
+          "country": null,
+          "line1": null,
+          "line2": null,
+          "postal_code": null,
+          "state": null
+        },
+        "email": "cclifegfcc@gmail.com",
+        "name": "WeChat22 1111",
+        "phone": null
+      },
+      "calculated_statement_descriptor": null,
+      "captured": true,
+      "created": 1603483523,
+      "currency": "usd",
+      "customer": null,
+      "description": "Order 491 from 中国福音大会",
+      "destination": null,
+      "dispute": null,
+      "disputed": false,
+      "failure_code": null,
+      "failure_message": null,
+      "fraud_details": {
+      },
+      "invoice": null,
+      "livemode": true,
+      "metadata": {
+        "gateway_id": "stripe_wechat",
+        "order_id": "491",
+        "user_id": "17",
+        "customer_id": "cus_IFkWaOh17tcQ9M",
+        "ip_address": "96.29.146.174",
+        "user_agent": "Stripe/1.0 (+https://stripe.com/docs/webhooks)",
+        "partner": "PaymentPlugins",
+        "created": "1603483522",
+        "product_287": "奉献 Donation x 1"
+      },
+      "on_behalf_of": null,
+      "order": null,
+      "outcome": {
+        "network_status": "approved_by_network",
+        "reason": null,
+        "risk_level": "not_assessed",
+        "seller_message": "Payment complete.",
+        "type": "authorized"
+      },
+      "paid": true,
+      "payment_intent": null,
+      "payment_method": "src_1HfVY8DcYTP1D35e2sn9qSYJ",
+      "payment_method_details": {
+        "type": "wechat",
+        "wechat": {
+        }
+      },
+      "receipt_email": null,
+      "receipt_number": null,
+      "receipt_url": "https://pay.stripe.com/receipts/acct_1HUCZvDcYTP1D35e/py_1HfWVrDcYTP1D35eNVq2AflO/rcpt_IG2b9OXM8mQWI0cTRv56NiIU6dE2lJB",
+      "refunded": false,
+      "refunds": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/charges/py_1HfWVrDcYTP1D35eNVq2AflO/refunds"
+      },
+      "review": null,
+      "shipping": null,
+      "source": {
+        "id": "src_1HfVY8DcYTP1D35e2sn9qSYJ",
+        "object": "source",
+        "amount": 70,
+        "client_secret": "src_client_secret_T8EO9S5CDqeQXNauLjlbXttS",
+        "created": 1603483524,
+        "currency": "usd",
+        "flow": "none",
+        "livemode": true,
+        "metadata": {
+          "order_id": "491",
+          "created": "1603479820"
+        },
+        "owner": {
+          "address": null,
+          "email": "cclifegfcc@gmail.com",
+          "name": "WeChat22 1111",
+          "phone": null,
+          "verified_address": null,
+          "verified_email": null,
+          "verified_name": null,
+          "verified_phone": null
+        },
+        "statement_descriptor": "Order 491",
+        "status": "consumed",
+        "type": "wechat",
+        "usage": "single_use",
+        "wechat": {
+          "prepay_id": "wx240303418184220ac868e132774e9c0000",
+          "qr_code_url": "weixin://wxpay/bizpayurl?pr=0rTyG0200"
+        }
+      },
+      "source_transfer": null,
+      "statement_descriptor": null,
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 2,
+  "request": {
+    "id": "req_XVTfxwszd8MHQR",
+    "idempotency_key": null
+  },
+  "type": "charge.succeeded"
+}
+2020-10-23T20:06:06+00:00 INFO Webhook notification received: Event: source.chargeable. Payload: {
+  "id": "evt_1HfVaxDcYTP1D35e9MYC9A3K",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1603479995,
+  "data": {
+    "object": {
+      "id": "src_1HfVacDcYTP1D35eQy4f02jw",
+      "object": "source",
+      "amount": 60,
+      "client_secret": "src_client_secret_LzTE1yEjxzm80DIB7aHDs9KZ",
+      "created": 1603479974,
+      "currency": "usd",
+      "flow": "none",
+      "livemode": true,
+      "metadata": {
+        "order_id": "492",
+        "created": "1603479974"
+      },
+      "owner": {
+        "address": null,
+        "email": "cclifegfcc@gmail.com",
+        "name": "WeChat22 1111",
+        "phone": null,
+        "verified_address": null,
+        "verified_email": null,
+        "verified_name": null,
+        "verified_phone": null
+      },
+      "statement_descriptor": "Order 492",
+      "status": "chargeable",
+      "type": "wechat",
+      "usage": "single_use",
+      "wechat": {
+        "prepay_id": "wx24030615349055345e09aea5bdf1c70000",
+        "qr_code_url": "weixin://wxpay/bizpayurl?pr=gx2hnsN00"
+      }
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 1,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "source.chargeable"
+}
+2020-10-23T20:06:08+00:00 INFO Stripe charge: Stripe\Charge Object
+(
+    [id] => py_1HfWWZDcYTP1D35e321m41be
+    [object] => charge
+    [amount] => 60
+    [amount_captured] => 60
+    [amount_refunded] => 0
+    [application] => ca_Gp4vLOJiqHJLZGxakHW7JdbBlcgWK8Up
+    [application_fee] => 
+    [application_fee_amount] => 
+    [balance_transaction] => txn_1HfWWaDcYTP1D35ehYlx89aK
+    [billing_details] => Stripe\StripeObject Object
+        (
+            [address] => Stripe\StripeObject Object
+                (
+                    [city] => 
+                    [country] => 
+                    [line1] => 
+                    [line2] => 
+                    [postal_code] => 
+                    [state] => 
+                )
+
+            [email] => cclifegfcc@gmail.com
+            [name] => WeChat22 1111
+            [phone] => 
+        )
+
+    [calculated_statement_descriptor] => 
+    [captured] => 1
+    [created] => 1603483567
+    [currency] => usd
+    [customer] => 
+    [description] => Order 492 from 中国福音大会
+    [destination] => 
+    [dispute] => 
+    [disputed] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => Array
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 1
+    [metadata] => Stripe\StripeObject Object
+        (
+            [gateway_id] => stripe_wechat
+            [order_id] => 492
+            [user_id] => 17
+            [customer_id] => cus_IFkWaOh17tcQ9M
+            [ip_address] => 96.29.146.174
+            [user_agent] => Stripe/1.0 (+https://stripe.com/docs/webhooks)
+            [partner] => PaymentPlugins
+            [created] => 1603483566
+            [product_287] => 奉献 Donation x 1
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => Stripe\StripeObject Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => not_assessed
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [payment_intent] => 
+    [payment_method] => src_1HfVacDcYTP1D35eQy4f02jw
+    [payment_method_details] => Stripe\StripeObject Object
+        (
+            [type] => wechat
+            [wechat] => Array
+                (
+                )
+
+        )
+
+    [receipt_email] => 
+    [receipt_number] => 
+    [receipt_url] => https://pay.stripe.com/receipts/acct_1HUCZvDcYTP1D35e/py_1HfWWZDcYTP1D35e321m41be/rcpt_IG2bGQiBhxSJdZHygPy5hYrVA0mUFNr
+    [refunded] => 
+    [refunds] => Stripe\Collection Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/py_1HfWWZDcYTP1D35e321m41be/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => Stripe\Source Object
+        (
+            [id] => src_1HfVacDcYTP1D35eQy4f02jw
+            [object] => source
+            [amount] => 60
+            [client_secret] => src_client_secret_LzTE1yEjxzm80DIB7aHDs9KZ
+            [created] => 1603483568
+            [currency] => usd
+            [flow] => none
+            [livemode] => 1
+            [metadata] => Stripe\StripeObject Object
+                (
+                    [order_id] => 492
+                    [created] => 1603479974
+                )
+
+            [owner] => Stripe\StripeObject Object
+                (
+                    [address] => 
+                    [email] => cclifegfcc@gmail.com
+                    [name] => WeChat22 1111
+                    [phone] => 
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [statement_descriptor] => Order 492
+            [status] => consumed
+            [type] => wechat
+            [usage] => single_use
+            [wechat] => Stripe\StripeObject Object
+                (
+                    [prepay_id] => wx24030615349055345e09aea5bdf1c70000
+                    [qr_code_url] => weixin://wxpay/bizpayurl?pr=gx2hnsN00
+                )
+
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [statement_descriptor_suffix] => 
+    [status] => succeeded
+    [transfer_data] => 
+    [transfer_group] => 
+)
+
+2020-10-23T20:06:09+00:00 INFO Webhook notification received: Event: charge.succeeded. Payload: {
+  "id": "evt_1HfWWaDcYTP1D35em3rQxKaU",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1603483568,
+  "data": {
+    "object": {
+      "id": "py_1HfWWZDcYTP1D35e321m41be",
+      "object": "charge",
+      "amount": 60,
+      "amount_captured": 60,
+      "amount_refunded": 0,
+      "application": "ca_Gp4vLOJiqHJLZGxakHW7JdbBlcgWK8Up",
+      "application_fee": null,
+      "application_fee_amount": null,
+      "balance_transaction": "txn_1HfWWaDcYTP1D35ehYlx89aK",
+      "billing_details": {
+        "address": {
+          "city": null,
+          "country": null,
+          "line1": null,
+          "line2": null,
+          "postal_code": null,
+          "state": null
+        },
+        "email": "cclifegfcc@gmail.com",
+        "name": "WeChat22 1111",
+        "phone": null
+      },
+      "calculated_statement_descriptor": null,
+      "captured": true,
+      "created": 1603483567,
+      "currency": "usd",
+      "customer": null,
+      "description": "Order 492 from 中国福音大会",
+      "destination": null,
+      "dispute": null,
+      "disputed": false,
+      "failure_code": null,
+      "failure_message": null,
+      "fraud_details": {
+      },
+      "invoice": null,
+      "livemode": true,
+      "metadata": {
+        "gateway_id": "stripe_wechat",
+        "order_id": "492",
+        "user_id": "17",
+        "customer_id": "cus_IFkWaOh17tcQ9M",
+        "ip_address": "96.29.146.174",
+        "user_agent": "Stripe/1.0 (+https://stripe.com/docs/webhooks)",
+        "partner": "PaymentPlugins",
+        "created": "1603483566",
+        "product_287": "奉献 Donation x 1"
+      },
+      "on_behalf_of": null,
+      "order": null,
+      "outcome": {
+        "network_status": "approved_by_network",
+        "reason": null,
+        "risk_level": "not_assessed",
+        "seller_message": "Payment complete.",
+        "type": "authorized"
+      },
+      "paid": true,
+      "payment_intent": null,
+      "payment_method": "src_1HfVacDcYTP1D35eQy4f02jw",
+      "payment_method_details": {
+        "type": "wechat",
+        "wechat": {
+        }
+      },
+      "receipt_email": null,
+      "receipt_number": null,
+      "receipt_url": "https://pay.stripe.com/receipts/acct_1HUCZvDcYTP1D35e/py_1HfWWZDcYTP1D35e321m41be/rcpt_IG2bGQiBhxSJdZHygPy5hYrVA0mUFNr",
+      "refunded": false,
+      "refunds": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/charges/py_1HfWWZDcYTP1D35e321m41be/refunds"
+      },
+      "review": null,
+      "shipping": null,
+      "source": {
+        "id": "src_1HfVacDcYTP1D35eQy4f02jw",
+        "object": "source",
+        "amount": 60,
+        "client_secret": "src_client_secret_LzTE1yEjxzm80DIB7aHDs9KZ",
+        "created": 1603483568,
+        "currency": "usd",
+        "flow": "none",
+        "livemode": true,
+        "metadata": {
+          "order_id": "492",
+          "created": "1603479974"
+        },
+        "owner": {
+          "address": null,
+          "email": "cclifegfcc@gmail.com",
+          "name": "WeChat22 1111",
+          "phone": null,
+          "verified_address": null,
+          "verified_email": null,
+          "verified_name": null,
+          "verified_phone": null
+        },
+        "statement_descriptor": "Order 492",
+        "status": "consumed",
+        "type": "wechat",
+        "usage": "single_use",
+        "wechat": {
+          "prepay_id": "wx24030615349055345e09aea5bdf1c70000",
+          "qr_code_url": "weixin://wxpay/bizpayurl?pr=gx2hnsN00"
+        }
+      },
+      "source_transfer": null,
+      "statement_descriptor": null,
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 2,
+  "request": {
+    "id": "req_tUHHaQwE7ipJo7",
+    "idempotency_key": null
+  },
+  "type": "charge.succeeded"
+}
+2020-10-23T21:15:59+00:00 INFO Webhook notification received: Event: source.chargeable. Payload: {
+  "id": "evt_1HfUnJDcYTP1D35e4vP3luJK",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1603476917,
+  "data": {
+    "object": {
+      "id": "src_1HfUmxDcYTP1D35e21gPuNi5",
+      "object": "source",
+      "amount": 90,
+      "client_secret": "src_client_secret_1r5h5Os90P523kw2vZIbQla6",
+      "created": 1603476895,
+      "currency": "usd",
+      "flow": "none",
+      "livemode": true,
+      "metadata": {
+        "order_id": "488",
+        "created": "1603476895"
+      },
+      "owner": {
+        "address": null,
+        "email": "cclifegfcc@gmail.com",
+        "name": "WeChat22 1111",
+        "phone": null,
+        "verified_address": null,
+        "verified_email": null,
+        "verified_name": null,
+        "verified_phone": null
+      },
+      "statement_descriptor": "Order 488",
+      "status": "chargeable",
+      "type": "wechat",
+      "usage": "single_use",
+      "wechat": {
+        "prepay_id": "wx24021456320136015bc7c96829340b0000",
+        "qr_code_url": "weixin://wxpay/bizpayurl?pr=kwsCNC500"
+      }
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 0,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "source.chargeable"
+}
+2020-10-23T21:15:59+00:00 INFO source.chargeable event received. Charge has already been created for order 488. Event exited.
+2020-10-23T23:01:08+00:00 INFO Webhook notification received: Event: source.chargeable. Payload: {
+  "id": "evt_1HfUbeDcYTP1D35eTY8HNlQk",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1603476194,
+  "data": {
+    "object": {
+      "id": "src_1HfUb9DcYTP1D35evEkCbclR",
+      "object": "source",
+      "amount": 120,
+      "client_secret": "src_client_secret_a2O8UoVzbaXxUxRvV2cjWTMX",
+      "created": 1603476163,
+      "currency": "usd",
+      "flow": "none",
+      "livemode": true,
+      "metadata": {
+        "order_id": "487",
+        "created": "1603476163"
+      },
+      "owner": {
+        "address": null,
+        "email": "cclifegfcc@gmail.com",
+        "name": "WeChat22 1111",
+        "phone": null,
+        "verified_address": null,
+        "verified_email": null,
+        "verified_name": null,
+        "verified_phone": null
+      },
+      "statement_descriptor": "Order 487",
+      "status": "chargeable",
+      "type": "wechat",
+      "usage": "single_use",
+      "wechat": {
+        "prepay_id": "wx240202451444493b7648f5adc70a0d0000",
+        "qr_code_url": "weixin://wxpay/bizpayurl?pr=IJ6fRKB00"
+      }
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 1,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "source.chargeable"
+}
+2020-10-23T23:01:10+00:00 INFO Stripe charge: Stripe\Charge Object
+(
+    [id] => py_1HfZFwDcYTP1D35eB90VwDh4
+    [object] => charge
+    [amount] => 120
+    [amount_captured] => 120
+    [amount_refunded] => 0
+    [application] => ca_Gp4vLOJiqHJLZGxakHW7JdbBlcgWK8Up
+    [application_fee] => 
+    [application_fee_amount] => 
+    [balance_transaction] => txn_1HfZFyDcYTP1D35eG1AuyWVl
+    [billing_details] => Stripe\StripeObject Object
+        (
+            [address] => Stripe\StripeObject Object
+                (
+                    [city] => 
+                    [country] => 
+                    [line1] => 
+                    [line2] => 
+                    [postal_code] => 
+                    [state] => 
+                )
+
+            [email] => cclifegfcc@gmail.com
+            [name] => WeChat22 1111
+            [phone] => 
+        )
+
+    [calculated_statement_descriptor] => 
+    [captured] => 1
+    [created] => 1603494068
+    [currency] => usd
+    [customer] => 
+    [description] => Order 487 from 中国福音大会
+    [destination] => 
+    [dispute] => 
+    [disputed] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => Array
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 1
+    [metadata] => Stripe\StripeObject Object
+        (
+            [gateway_id] => stripe_wechat
+            [order_id] => 487
+            [user_id] => 17
+            [customer_id] => cus_IFkWaOh17tcQ9M
+            [ip_address] => 96.29.146.174
+            [user_agent] => Stripe/1.0 (+https://stripe.com/docs/webhooks)
+            [partner] => PaymentPlugins
+            [created] => 1603494068
+            [product_287] => 奉献 Donation x 1
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => Stripe\StripeObject Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => not_assessed
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [payment_intent] => 
+    [payment_method] => src_1HfUb9DcYTP1D35evEkCbclR
+    [payment_method_details] => Stripe\StripeObject Object
+        (
+            [type] => wechat
+            [wechat] => Array
+                (
+                )
+
+        )
+
+    [receipt_email] => 
+    [receipt_number] => 
+    [receipt_url] => https://pay.stripe.com/receipts/acct_1HUCZvDcYTP1D35e/py_1HfZFwDcYTP1D35eB90VwDh4/rcpt_IG5QvXJCzZC3PLm8FGWT42hmjaW5skg
+    [refunded] => 
+    [refunds] => Stripe\Collection Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/py_1HfZFwDcYTP1D35eB90VwDh4/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => Stripe\Source Object
+        (
+            [id] => src_1HfUb9DcYTP1D35evEkCbclR
+            [object] => source
+            [amount] => 120
+            [client_secret] => src_client_secret_a2O8UoVzbaXxUxRvV2cjWTMX
+            [created] => 1603494070
+            [currency] => usd
+            [flow] => none
+            [livemode] => 1
+            [metadata] => Stripe\StripeObject Object
+                (
+                    [order_id] => 487
+                    [created] => 1603476163
+                )
+
+            [owner] => Stripe\StripeObject Object
+                (
+                    [address] => 
+                    [email] => cclifegfcc@gmail.com
+                    [name] => WeChat22 1111
+                    [phone] => 
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [statement_descriptor] => Order 487
+            [status] => consumed
+            [type] => wechat
+            [usage] => single_use
+            [wechat] => Stripe\StripeObject Object
+                (
+                    [prepay_id] => wx240202451444493b7648f5adc70a0d0000
+                    [qr_code_url] => weixin://wxpay/bizpayurl?pr=IJ6fRKB00
+                )
+
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [statement_descriptor_suffix] => 
+    [status] => succeeded
+    [transfer_data] => 
+    [transfer_group] => 
+)
+
+2020-10-23T23:01:11+00:00 INFO Webhook notification received: Event: charge.succeeded. Payload: {
+  "id": "evt_1HfZFyDcYTP1D35eS6BM8J9o",
+  "object": "event",
+  "api_version": "2020-08-27",
+  "created": 1603494070,
+  "data": {
+    "object": {
+      "id": "py_1HfZFwDcYTP1D35eB90VwDh4",
+      "object": "charge",
+      "amount": 120,
+      "amount_captured": 120,
+      "amount_refunded": 0,
+      "application": "ca_Gp4vLOJiqHJLZGxakHW7JdbBlcgWK8Up",
+      "application_fee": null,
+      "application_fee_amount": null,
+      "balance_transaction": "txn_1HfZFyDcYTP1D35eG1AuyWVl",
+      "billing_details": {
+        "address": {
+          "city": null,
+          "country": null,
+          "line1": null,
+          "line2": null,
+          "postal_code": null,
+          "state": null
+        },
+        "email": "cclifegfcc@gmail.com",
+        "name": "WeChat22 1111",
+        "phone": null
+      },
+      "calculated_statement_descriptor": null,
+      "captured": true,
+      "created": 1603494068,
+      "currency": "usd",
+      "customer": null,
+      "description": "Order 487 from 中国福音大会",
+      "destination": null,
+      "dispute": null,
+      "disputed": false,
+      "failure_code": null,
+      "failure_message": null,
+      "fraud_details": {
+      },
+      "invoice": null,
+      "livemode": true,
+      "metadata": {
+        "gateway_id": "stripe_wechat",
+        "order_id": "487",
+        "user_id": "17",
+        "customer_id": "cus_IFkWaOh17tcQ9M",
+        "ip_address": "96.29.146.174",
+        "user_agent": "Stripe/1.0 (+https://stripe.com/docs/webhooks)",
+        "partner": "PaymentPlugins",
+        "created": "1603494068",
+        "product_287": "奉献 Donation x 1"
+      },
+      "on_behalf_of": null,
+      "order": null,
+      "outcome": {
+        "network_status": "approved_by_network",
+        "reason": null,
+        "risk_level": "not_assessed",
+        "seller_message": "Payment complete.",
+        "type": "authorized"
+      },
+      "paid": true,
+      "payment_intent": null,
+      "payment_method": "src_1HfUb9DcYTP1D35evEkCbclR",
+      "payment_method_details": {
+        "type": "wechat",
+        "wechat": {
+        }
+      },
+      "receipt_email": null,
+      "receipt_number": null,
+      "receipt_url": "https://pay.stripe.com/receipts/acct_1HUCZvDcYTP1D35e/py_1HfZFwDcYTP1D35eB90VwDh4/rcpt_IG5QvXJCzZC3PLm8FGWT42hmjaW5skg",
+      "refunded": false,
+      "refunds": {
+        "object": "list",
+        "data": [
+
+        ],
+        "has_more": false,
+        "total_count": 0,
+        "url": "/v1/charges/py_1HfZFwDcYTP1D35eB90VwDh4/refunds"
+      },
+      "review": null,
+      "shipping": null,
+      "source": {
+        "id": "src_1HfUb9DcYTP1D35evEkCbclR",
+        "object": "source",
+        "amount": 120,
+        "client_secret": "src_client_secret_a2O8UoVzbaXxUxRvV2cjWTMX",
+        "created": 1603494070,
+        "currency": "usd",
+        "flow": "none",
+        "livemode": true,
+        "metadata": {
+          "order_id": "487",
+          "created": "1603476163"
+        },
+        "owner": {
+          "address": null,
+          "email": "cclifegfcc@gmail.com",
+          "name": "WeChat22 1111",
+          "phone": null,
+          "verified_address": null,
+          "verified_email": null,
+          "verified_name": null,
+          "verified_phone": null
+        },
+        "statement_descriptor": "Order 487",
+        "status": "consumed",
+        "type": "wechat",
+        "usage": "single_use",
+        "wechat": {
+          "prepay_id": "wx240202451444493b7648f5adc70a0d0000",
+          "qr_code_url": "weixin://wxpay/bizpayurl?pr=IJ6fRKB00"
+        }
+      },
+      "source_transfer": null,
+      "statement_descriptor": null,
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": true,
+  "pending_webhooks": 2,
+  "request": {
+    "id": "req_FtC53HOtYxJ2ZO",
+    "idempotency_key": null
+  },
+  "type": "charge.succeeded"
+}

@@ -1,0 +1,474 @@
+2020-10-16T18:46:24+00:00 INFO Stripe charge: Stripe\Charge Object
+(
+    [id] => py_1HcxwaDcYTP1D35e50KRyGK2
+    [object] => charge
+    [amount] => 50
+    [amount_captured] => 50
+    [amount_refunded] => 0
+    [application] => ca_Gp4vLOJiqHJLZGxakHW7JdbBlcgWK8Up
+    [application_fee] => 
+    [application_fee_amount] => 
+    [balance_transaction] => txn_1HcxwaDcYTP1D35eXeJRy9rt
+    [billing_details] => Stripe\StripeObject Object
+        (
+            [address] => Stripe\StripeObject Object
+                (
+                    [city] => 
+                    [country] => 
+                    [line1] => 
+                    [line2] => 
+                    [postal_code] => 
+                    [state] => 
+                )
+
+            [email] => anderson916@gmail.com
+            [name] => john zhang
+            [phone] => 
+        )
+
+    [calculated_statement_descriptor] => 
+    [captured] => 1
+    [created] => 1602873984
+    [currency] => usd
+    [customer] => 
+    [description] => Order 305 from 中国福音大会
+    [destination] => 
+    [dispute] => 
+    [disputed] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => Array
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => Stripe\StripeObject Object
+        (
+            [gateway_id] => stripe_alipay
+            [order_id] => 305
+            [user_id] => 1
+            [customer_id] => cus_IA7yltTaJmx2le
+            [ip_address] => 172.17.0.1
+            [user_agent] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+            [partner] => PaymentPlugins
+            [created] => 1602873983
+            [product_10] => 2020中国福音网络大会报名费 x 1
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => Stripe\StripeObject Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => not_assessed
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [payment_intent] => 
+    [payment_method] => src_1HcxwQDcYTP1D35eMXOHAjvc
+    [payment_method_details] => Stripe\StripeObject Object
+        (
+            [alipay] => Stripe\StripeObject Object
+                (
+                    [fingerprint] => 
+                    [transaction_id] => 
+                )
+
+            [type] => alipay
+        )
+
+    [receipt_email] => 
+    [receipt_number] => 
+    [receipt_url] => https://pay.stripe.com/receipts/acct_1HUCZvDcYTP1D35e/py_1HcxwaDcYTP1D35e50KRyGK2/rcpt_IDOkF6E9ZurOUgHk6Pd1vOGcZff4dSR
+    [refunded] => 
+    [refunds] => Stripe\Collection Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/py_1HcxwaDcYTP1D35e50KRyGK2/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => Stripe\Source Object
+        (
+            [id] => src_1HcxwQDcYTP1D35eMXOHAjvc
+            [object] => source
+            [alipay] => Stripe\StripeObject Object
+                (
+                    [statement_descriptor] => 
+                    [native_url] => 
+                    [data_string] => 
+                )
+
+            [amount] => 50
+            [client_secret] => src_client_secret_fwBwYNgJtDTIAf4r6VLhXCyL
+            [created] => 1602873984
+            [currency] => usd
+            [flow] => redirect
+            [livemode] => 
+            [metadata] => Stripe\StripeObject Object
+                (
+                    [order_id] => 305
+                    [created] => 1602873974
+                )
+
+            [owner] => Stripe\StripeObject Object
+                (
+                    [address] => 
+                    [email] => anderson916@gmail.com
+                    [name] => john zhang
+                    [phone] => 
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [redirect] => Stripe\StripeObject Object
+                (
+                    [failure_reason] => 
+                    [return_url] => https://2020.gospel4china.org/?page_id=8&_payment_nonce=8734d3deb7&wc-stripe-local-gateway=stripe_alipay
+                    [status] => succeeded
+                    [url] => https://hooks.stripe.com/redirect/authenticate/src_1HcxwQDcYTP1D35eMXOHAjvc?client_secret=src_client_secret_fwBwYNgJtDTIAf4r6VLhXCyL
+                )
+
+            [statement_descriptor] => Order 305
+            [status] => consumed
+            [type] => alipay
+            [usage] => single_use
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [statement_descriptor_suffix] => 
+    [status] => succeeded
+    [transfer_data] => 
+    [transfer_group] => 
+)
+
+2020-10-16T18:51:23+00:00 INFO Stripe charge: Stripe\Charge Object
+(
+    [id] => py_1Hcy1ODcYTP1D35eb7dFjBAf
+    [object] => charge
+    [amount] => 50
+    [amount_captured] => 50
+    [amount_refunded] => 0
+    [application] => ca_Gp4vLOJiqHJLZGxakHW7JdbBlcgWK8Up
+    [application_fee] => 
+    [application_fee_amount] => 
+    [balance_transaction] => txn_1Hcy1PDcYTP1D35eJx2AHJjb
+    [billing_details] => Stripe\StripeObject Object
+        (
+            [address] => Stripe\StripeObject Object
+                (
+                    [city] => 
+                    [country] => 
+                    [line1] => 
+                    [line2] => 
+                    [postal_code] => 
+                    [state] => 
+                )
+
+            [email] => anderson916@gmail.com
+            [name] => john zhang
+            [phone] => 
+        )
+
+    [calculated_statement_descriptor] => 
+    [captured] => 1
+    [created] => 1602874282
+    [currency] => usd
+    [customer] => 
+    [description] => Order 306 from 中国福音大会
+    [destination] => 
+    [dispute] => 
+    [disputed] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => Array
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => Stripe\StripeObject Object
+        (
+            [gateway_id] => stripe_alipay
+            [order_id] => 306
+            [user_id] => 1
+            [customer_id] => cus_IA7yltTaJmx2le
+            [ip_address] => 172.17.0.1
+            [user_agent] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+            [partner] => PaymentPlugins
+            [created] => 1602874282
+            [product_10] => 2020中国福音网络大会报名费 x 1
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => Stripe\StripeObject Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => not_assessed
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [payment_intent] => 
+    [payment_method] => src_1Hcy17DcYTP1D35eNyTiFpPa
+    [payment_method_details] => Stripe\StripeObject Object
+        (
+            [alipay] => Stripe\StripeObject Object
+                (
+                    [fingerprint] => 
+                    [transaction_id] => 
+                )
+
+            [type] => alipay
+        )
+
+    [receipt_email] => 
+    [receipt_number] => 
+    [receipt_url] => https://pay.stripe.com/receipts/acct_1HUCZvDcYTP1D35e/py_1Hcy1ODcYTP1D35eb7dFjBAf/rcpt_IDOpmzlJNftwPdQWFUTKAQFOIY2XiQi
+    [refunded] => 
+    [refunds] => Stripe\Collection Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/py_1Hcy1ODcYTP1D35eb7dFjBAf/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => Stripe\Source Object
+        (
+            [id] => src_1Hcy17DcYTP1D35eNyTiFpPa
+            [object] => source
+            [alipay] => Stripe\StripeObject Object
+                (
+                    [statement_descriptor] => 
+                    [native_url] => 
+                    [data_string] => 
+                )
+
+            [amount] => 50
+            [client_secret] => src_client_secret_u8n8ZmmIIUM5djJHhinBRTSb
+            [created] => 1602874283
+            [currency] => usd
+            [flow] => redirect
+            [livemode] => 
+            [metadata] => Stripe\StripeObject Object
+                (
+                    [order_id] => 306
+                    [created] => 1602874265
+                )
+
+            [owner] => Stripe\StripeObject Object
+                (
+                    [address] => 
+                    [email] => anderson916@gmail.com
+                    [name] => john zhang
+                    [phone] => 
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [redirect] => Stripe\StripeObject Object
+                (
+                    [failure_reason] => 
+                    [return_url] => https://2020.gospel4china.org/?page_id=8&_payment_nonce=8734d3deb7&wc-stripe-local-gateway=stripe_alipay
+                    [status] => succeeded
+                    [url] => https://hooks.stripe.com/redirect/authenticate/src_1Hcy17DcYTP1D35eNyTiFpPa?client_secret=src_client_secret_u8n8ZmmIIUM5djJHhinBRTSb
+                )
+
+            [statement_descriptor] => Order 306
+            [status] => consumed
+            [type] => alipay
+            [usage] => single_use
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [statement_descriptor_suffix] => 
+    [status] => succeeded
+    [transfer_data] => 
+    [transfer_group] => 
+)
+
+2020-10-16T19:34:43+00:00 INFO Stripe charge: Stripe\Charge Object
+(
+    [id] => py_1HcyhLDcYTP1D35ehi1bGPyl
+    [object] => charge
+    [amount] => 50
+    [amount_captured] => 50
+    [amount_refunded] => 0
+    [application] => ca_Gp4vLOJiqHJLZGxakHW7JdbBlcgWK8Up
+    [application_fee] => 
+    [application_fee_amount] => 
+    [balance_transaction] => txn_1HcyhLDcYTP1D35ebmLHBQnF
+    [billing_details] => Stripe\StripeObject Object
+        (
+            [address] => Stripe\StripeObject Object
+                (
+                    [city] => 
+                    [country] => 
+                    [line1] => 
+                    [line2] => 
+                    [postal_code] => 
+                    [state] => 
+                )
+
+            [email] => abc@gmail.com
+            [name] =>  
+            [phone] => 
+        )
+
+    [calculated_statement_descriptor] => 
+    [captured] => 1
+    [created] => 1602876883
+    [currency] => usd
+    [customer] => 
+    [description] => Order 307 from 中国福音大会
+    [destination] => 
+    [dispute] => 
+    [disputed] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => Array
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => Stripe\StripeObject Object
+        (
+            [gateway_id] => stripe_alipay
+            [order_id] => 307
+            [user_id] => 8
+            [customer_id] => cus_IDPVSZz4nrgv07
+            [ip_address] => 172.17.0.1
+            [user_agent] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15
+            [partner] => PaymentPlugins
+            [created] => 1602876883
+            [product_10] => 2020中国福音网络大会报名费 x 1
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => Stripe\StripeObject Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => not_assessed
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [payment_intent] => 
+    [payment_method] => src_1HcyhDDcYTP1D35e2VAfVwzi
+    [payment_method_details] => Stripe\StripeObject Object
+        (
+            [alipay] => Stripe\StripeObject Object
+                (
+                    [fingerprint] => 
+                    [transaction_id] => 
+                )
+
+            [type] => alipay
+        )
+
+    [receipt_email] => 
+    [receipt_number] => 
+    [receipt_url] => https://pay.stripe.com/receipts/acct_1HUCZvDcYTP1D35e/py_1HcyhLDcYTP1D35ehi1bGPyl/rcpt_IDPWeaWGohw1EMvZbEYgvPmi4orZy7S
+    [refunded] => 
+    [refunds] => Stripe\Collection Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/py_1HcyhLDcYTP1D35ehi1bGPyl/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => Stripe\Source Object
+        (
+            [id] => src_1HcyhDDcYTP1D35e2VAfVwzi
+            [object] => source
+            [alipay] => Stripe\StripeObject Object
+                (
+                    [statement_descriptor] => 
+                    [native_url] => 
+                    [data_string] => 
+                )
+
+            [amount] => 50
+            [client_secret] => src_client_secret_VOouqjXo6Jx7gEJwOCcoeoOy
+            [created] => 1602876883
+            [currency] => usd
+            [flow] => redirect
+            [livemode] => 
+            [metadata] => Stripe\StripeObject Object
+                (
+                    [order_id] => 307
+                    [created] => 1602876875
+                )
+
+            [owner] => Stripe\StripeObject Object
+                (
+                    [address] => 
+                    [email] => abc@gmail.com
+                    [name] =>  
+                    [phone] => 
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [redirect] => Stripe\StripeObject Object
+                (
+                    [failure_reason] => 
+                    [return_url] => https://2020.gospel4china.org/?page_id=8&_payment_nonce=229bae1d5c&wc-stripe-local-gateway=stripe_alipay
+                    [status] => succeeded
+                    [url] => https://hooks.stripe.com/redirect/authenticate/src_1HcyhDDcYTP1D35e2VAfVwzi?client_secret=src_client_secret_VOouqjXo6Jx7gEJwOCcoeoOy
+                )
+
+            [statement_descriptor] => Order 307
+            [status] => consumed
+            [type] => alipay
+            [usage] => single_use
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [statement_descriptor_suffix] => 
+    [status] => succeeded
+    [transfer_data] => 
+    [transfer_group] => 
+)
+
